@@ -1,0 +1,34 @@
+{
+    "upcharge_list": [],
+    "activation_date": "2023-05-15",
+    "i_product": 86,
+    "i_account_subscription": 666,
+    "regular_discount_list": [],
+    "int_status": 1,
+    "generate_daily_charge": "Y",
+    "effective_fee": 6,
+    "i_account": 2984,
+    "monthly_fee": 45,
+    "discount_list": [],
+    "i_subscription": 96,
+    "billed_to": "2023-05-27",
+    "has_discount": 0,
+    "start_date": "2023-05-15",
+    "multi_month_discount_list": [],
+    "is_finished": "N",
+    "i_discount_next": null,
+    "obligatory": "Y",
+    "invoice_description": "Unlim Data, daily",
+    "name": "Unlim Data daily",
+    "finish_date": "2023-05-31",
+    "multiple": 0,
+    "effective_fees_info": {
+        "next": [],
+        "current": {
+            "amount": 6,
+            "charged_to": "2023-06-01",
+            "included_periods": 1
+        }
+    },
+    "subscription_level_invoice_description": "Unlim Data, daily"
+}

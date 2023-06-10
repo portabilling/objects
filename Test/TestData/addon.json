@@ -1,0 +1,71 @@
+{
+    "i_product": 86,
+    "i_product_group": 7,
+    "i_reseller_subscription": null,
+    "default_i_acl": 155,
+    "iso_4217": "USD",
+    "end_user_name": "Unlimited Mobile Data DAILY",
+    "shared": "N",
+    "addon_priority": 30,
+    "breakage": 0,
+    "info_url": "",
+    "realm": "msisdn",
+    "i_subscription": 96,
+    "i_vd_plan": 48,
+    "product_subscription": {
+        "i_product": 86,
+        "fee": 45,
+        "generate_daily_charge": "Y",
+        "iso_4217": "USD",
+        "effective_fee": 45,
+        "i_product_subscription": 93,
+        "activation_mode": 1,
+        "i_subscription": 96,
+        "multi_month_discount_list": [],
+        "charge_model": 0,
+        "name": "Unlim Data daily",
+        "invoice_description": "Unlim Data, daily",
+        "periodic_fees": [
+            [
+                {
+                    "i_billing_period": 4,
+                    "periods": 0,
+                    "fee": 45,
+                    "i_subscription": 96
+                },
+                {
+                    "i_billing_period": 1,
+                    "periods": 0,
+                    "fee": 1.5,
+                    "i_subscription": 96
+                },
+                {
+                    "i_billing_period": 3,
+                    "periods": 0,
+                    "fee": 22.5,
+                    "i_subscription": 96
+                },
+                {
+                    "i_billing_period": 2,
+                    "periods": 0,
+                    "fee": 10.5,
+                    "i_subscription": 96
+                }
+            ]
+        ],
+        "description": "",
+        "multiple": 0,
+        "activation_fee": 0
+    },
+    "i_account_role": 8,
+    "subscription_discount_list": [],
+    "service_flag_locks": "   1",
+    "name": "Unli Data daily",
+    "description": "",
+    "addon_effective_from": "2023-05-15 09:34:58",
+    "end_user_description": "DAILY unlimited mobile internet",
+    "volume_discount_plan_name": "Unlim Data Daily",
+    "managed_by_user": "N",
+    "hidden": "N",
+    "fraud_protection": "None"
+}

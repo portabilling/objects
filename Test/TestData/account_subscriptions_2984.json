@@ -1,0 +1,100 @@
+{
+    "subscriptions": [
+        {
+            "upcharge_list": [],
+            "i_product": 89,
+            "i_account_subscription": 700,
+            "regular_discount_list": [],
+            "int_status": 0,
+            "generate_daily_charge": "N",
+            "i_account": 2984,
+            "monthly_fee": 35,
+            "discount_list": [],
+            "i_subscription": 99,
+            "has_discount": 0,
+            "start_date": "2023-06-01",
+            "multi_month_discount_list": [],
+            "is_finished": "N",
+            "i_discount_next": null,
+            "obligatory": "Y",
+            "invoice_description": "Unlim PTWaves + Data",
+            "name": "Unlim PTWaves + Data",
+            "finish_date": null,
+            "multiple": 0,
+            "effective_fees_info": {
+                "next": [],
+                "current": []
+            },
+            "subscription_level_invoice_description": "Unlim PTWaves + Data"
+        },
+        {
+            "upcharge_list": [],
+            "activation_date": "2023-05-15",
+            "i_product": 86,
+            "i_account_subscription": 666,
+            "regular_discount_list": [],
+            "int_status": 1,
+            "generate_daily_charge": "Y",
+            "effective_fee": 6,
+            "i_account": 2984,
+            "monthly_fee": 45,
+            "discount_list": [],
+            "i_subscription": 96,
+            "billed_to": "2023-05-27",
+            "has_discount": 0,
+            "start_date": "2023-05-15",
+            "multi_month_discount_list": [],
+            "is_finished": "N",
+            "i_discount_next": null,
+            "obligatory": "Y",
+            "invoice_description": "Unlim Data, daily",
+            "name": "Unlim Data daily",
+            "finish_date": "2023-05-31",
+            "multiple": 0,
+            "effective_fees_info": {
+                "next": [],
+                "current": {
+                    "amount": 6,
+                    "charged_to": "2023-06-01",
+                    "included_periods": 1
+                }
+            },
+            "subscription_level_invoice_description": "Unlim Data, daily"
+        },
+        {
+            "upcharge_list": [],
+            "activation_date": "2023-05-22",
+            "i_product": 87,
+            "i_account_subscription": 690,
+            "regular_discount_list": [],
+            "int_status": 1,
+            "generate_daily_charge": "N",
+            "effective_fee": 0,
+            "i_account": 2984,
+            "monthly_fee": 10,
+            "discount_list": [],
+            "i_subscription": 86,
+            "billed_to": "2023-05-31",
+            "has_discount": 0,
+            "start_date": "2023-05-22",
+            "multi_month_discount_list": [],
+            "is_finished": "N",
+            "i_discount_next": null,
+            "obligatory": "Y",
+            "invoice_description": "Unlim PTWaves",
+            "name": "Unlim PTWaves",
+            "finish_date": "2023-05-31",
+            "rounding": 2,
+            "multiple": 0,
+            "effective_fees_info": {
+                "next": [],
+                "current": {
+                    "amount": 0,
+                    "charged_to": "2023-06-01",
+                    "included_periods": 0
+                }
+            },
+            "subscription_level_invoice_description": "Unlim PTWaves"
+        }
+    ]
+}

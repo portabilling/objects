@@ -1,0 +1,1043 @@
+{
+    "product_list": [
+        {
+            "i_product": 80,
+            "i_product_group": 4,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Employee pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 39,
+            "product_group_name": "Partner's benefits",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "name": "Employee pack",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Empoyee pack",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 75,
+            "i_product_group": 4,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "PTWave partner's pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 21,
+            "product_group_name": "Partner's benefits",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Infrastructure partner's pack",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "Use with care, always set productexpire date!",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Infrastructore partners",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 71,
+            "i_product_group": 5,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Migration welcome pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 28,
+            "product_group_name": "Migration packs",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Migration pack L \/ Tourist call",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "Use with care, always set productexpire date!",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Migration pack L",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 73,
+            "i_product_group": 5,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Migration welcome pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 33,
+            "product_group_name": "Migration packs",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Migration pack S",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "Use with care, always set productexpire date!",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Migration pack S",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 78,
+            "i_product_group": 6,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Migration welcome pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 36,
+            "product_group_name": "Visitor's packs",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Tourist data only",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "Use with care, always set productexpire date!",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Visitor's welcome pack 15GB",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 77,
+            "i_product_group": 6,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Migration welcome pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 37,
+            "product_group_name": "Visitor's packs",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Tourist long-stay",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "Use with care, always set productexpire date!",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Tourist Plus",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 86,
+            "i_product_group": 7,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlimited Mobile Data DAILY",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 96,
+            "i_vd_plan": 48,
+            "product_subscription": {
+                "charge_model": 0,
+                "i_product": 86,
+                "generate_daily_charge": "Y",
+                "invoice_description": "Unlim Data, daily",
+                "name": "Unlim Data daily",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 45,
+                            "i_subscription": 96
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 1.5,
+                            "i_subscription": 96
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 22.5,
+                            "i_subscription": 96
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 10.5,
+                            "i_subscription": 96
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 93,
+                "activation_mode": 1,
+                "i_subscription": 96,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Mobile daily subscriptions",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Unli Data daily",
+            "description": "",
+            "included_services": [
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "DAILY unlimited mobile internet<br>SUBSCRIPTION WILL RENEW AT 11:59pm TONIGHT",
+            "volume_discount_plan_name": "Unlim Data Daily",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 85,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlimited Mobile Data MONTHLY",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 93,
+            "i_vd_plan": 43,
+            "product_subscription": {
+                "charge_model": 2,
+                "i_product": 85,
+                "generate_daily_charge": "N",
+                "invoice_description": "Unlim Data",
+                "advance_periods": 1,
+                "name": "Unlim Data",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 30,
+                            "i_subscription": 93
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 1,
+                            "i_subscription": 93
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 15,
+                            "i_subscription": 93
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 7,
+                            "i_subscription": 93
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 91,
+                "activation_mode": 2,
+                "i_subscription": 93,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Unli Data monthly",
+            "description": "",
+            "included_services": [
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "MONTHLY unlimited mobile internet<br>Subscription will renew at 11:59pm on the last day of the month.",
+            "volume_discount_plan_name": "Unlim Data",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 87,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlimited PT Waves calls & texts",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 86,
+            "i_vd_plan": 42,
+            "product_subscription": {
+                "i_product": 87,
+                "generate_daily_charge": "N",
+                "iso_4217": "USD",
+                "i_product_subscription": 94,
+                "activation_mode": 1,
+                "i_subscription": 86,
+                "multi_month_discount_list": [],
+                "charge_model": 2,
+                "name": "Unlim PTWaves",
+                "advance_periods": 1,
+                "invoice_description": "Unlim PTWaves",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 10,
+                            "i_subscription": 86
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 0.33333,
+                            "i_subscription": 86
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 5,
+                            "i_subscription": 86
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 2.33333,
+                            "i_subscription": 86
+                        }
+                    ]
+                ],
+                "description": "",
+                "rounding": 2,
+                "multiple": 0,
+                "activation_fee": 0
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "name": "Unli PT",
+            "description": "",
+            "included_services": [
+                3,
+                10
+            ],
+            "notepad": "",
+            "end_user_description": "Unli calls & texts to ALL PT subscribers (mobile data NOT included)<br>Subscription will renew at 11:59pm on the last day of the month.",
+            "volume_discount_plan_name": "Unlim PTWaves",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 93,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unli-data & Unli-PT bundle DAILY",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 103,
+            "i_vd_plan": 50,
+            "product_subscription": {
+                "charge_model": 0,
+                "i_product": 93,
+                "generate_daily_charge": "Y",
+                "invoice_description": "Unlim PTWaves + Data Daily",
+                "name": "Unlim PTWaves + Data Daily",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 60,
+                            "i_subscription": 103
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 2,
+                            "i_subscription": 103
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 30,
+                            "i_subscription": 103
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 14,
+                            "i_subscription": 103
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 101,
+                "activation_mode": 1,
+                "i_subscription": 103,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "name": "Unli PT+Data daily",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "DAILY Unlimited mobile data PLUS unlimited calls & texts to ALL PT subscribers (IDD and calls & texts to PNCC are NOT included)<br>SUBSCRIPTION WILL RENEW AT 11:59pm TONIGHT",
+            "volume_discount_plan_name": "Unlim PTWaves + Data Daily",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 89,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unli-data & Unli-PT bundle MONTHLY",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 99,
+            "i_vd_plan": 45,
+            "product_subscription": {
+                "charge_model": 2,
+                "i_product": 89,
+                "generate_daily_charge": "N",
+                "invoice_description": "Unlim PTWaves + Data",
+                "advance_periods": 1,
+                "name": "Unlim PTWaves + Data",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 35,
+                            "i_subscription": 99
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 1.16667,
+                            "i_subscription": 99
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 17.5,
+                            "i_subscription": 99
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 8.16667,
+                            "i_subscription": 99
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 96,
+                "activation_mode": 1,
+                "i_subscription": 99,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "name": "Unli PT+Data monthly",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "MONTHLY unli mobile data PLUS unli calls & texts to ALL PT subscribers (IDD and calls & texts to PNCC are NOT included)<br>Subscription will renew at 11:59pm on the last day of the month.",
+            "volume_discount_plan_name": "Unlim PTWaves + Data",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 88,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlim Palau SMS",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 98,
+            "i_vd_plan": 44,
+            "product_subscription": {
+                "charge_model": 2,
+                "i_product": 88,
+                "generate_daily_charge": "N",
+                "invoice_description": "Unlim Palau SMS",
+                "advance_periods": 1,
+                "name": "Unlim Palau SMS",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 15,
+                            "i_subscription": 98
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 0.5,
+                            "i_subscription": 98
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 7.5,
+                            "i_subscription": 98
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 3.5,
+                            "i_subscription": 98
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 95,
+                "activation_mode": 1,
+                "i_subscription": 98,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "name": "Unlim Palau SMS",
+            "description": "",
+            "included_services": [
+                10
+            ],
+            "notepad": "",
+            "end_user_description": "Unlimited SMS to Palau (PTWaves&PNCC)",
+            "volume_discount_plan_name": "Unlim Palau SMS",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 90,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlim Palau SMS+data",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 100,
+            "i_vd_plan": 46,
+            "product_subscription": {
+                "charge_model": 2,
+                "i_product": 90,
+                "generate_daily_charge": "N",
+                "invoice_description": "Unlim Palau SMS+Data",
+                "advance_periods": 1,
+                "name": "Unlim Palau SMS+Data",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 40,
+                            "i_subscription": 100
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 1.33333,
+                            "i_subscription": 100
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 20,
+                            "i_subscription": 100
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 9.33333,
+                            "i_subscription": 100
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 97,
+                "activation_mode": 1,
+                "i_subscription": 100,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Unlim Palau SMS+data",
+            "description": "",
+            "included_services": [
+                10,
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "Inlimited mobile Internet and SMS to Palau",
+            "volume_discount_plan_name": "Unlim Palau SMS + Data",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 91,
+            "i_product_group": 3,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlim Palau+data",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 101,
+            "i_vd_plan": 47,
+            "product_subscription": {
+                "charge_model": 2,
+                "i_product": 91,
+                "generate_daily_charge": "N",
+                "invoice_description": "Unlim Palau+Data",
+                "advance_periods": 1,
+                "name": "Unlim Palau+Data",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 60,
+                            "i_subscription": 101
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 2,
+                            "i_subscription": 101
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 30,
+                            "i_subscription": 101
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 14,
+                            "i_subscription": 101
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 98,
+                "activation_mode": 1,
+                "i_subscription": 101,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Moblie monthly subscription",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Unlim Palau+data",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "Unlimited mobile Internet, calls and SMS to Palau",
+            "volume_discount_plan_name": "Unlim Palau+Data",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 92,
+            "i_product_group": 7,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Unlim Palau+data daily",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": 102,
+            "i_vd_plan": 47,
+            "product_subscription": {
+                "charge_model": 0,
+                "i_product": 92,
+                "generate_daily_charge": "Y",
+                "invoice_description": "Unlim Palau+Data daily",
+                "name": "Unlim Palau+Data daily",
+                "iso_4217": "USD",
+                "periodic_fees": [
+                    [
+                        {
+                            "i_billing_period": 4,
+                            "periods": 0,
+                            "fee": 75,
+                            "i_subscription": 102
+                        },
+                        {
+                            "i_billing_period": 1,
+                            "periods": 0,
+                            "fee": 2.5,
+                            "i_subscription": 102
+                        },
+                        {
+                            "i_billing_period": 3,
+                            "periods": 0,
+                            "fee": 37.5,
+                            "i_subscription": 102
+                        },
+                        {
+                            "i_billing_period": 2,
+                            "periods": 0,
+                            "fee": 17.5,
+                            "i_subscription": 102
+                        }
+                    ]
+                ],
+                "description": "",
+                "i_product_subscription": 99,
+                "activation_mode": 1,
+                "i_subscription": 102,
+                "multiple": 0,
+                "activation_fee": 0,
+                "multi_month_discount_list": []
+            },
+            "product_group_name": "Mobile daily subscriptions",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Unlim Palau+data daily",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "Unlimited mobile Internet, calls and SMS to Palau, daily charge",
+            "volume_discount_plan_name": "Unlim Palau+Data",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 74,
+            "i_product_group": 5,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Migration welcome pack",
+            "shared": "N",
+            "addon_priority": 30,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 34,
+            "product_group_name": "Migration packs",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "Welcome pack first 50",
+            "description": "",
+            "included_services": [
+                3,
+                10,
+                105
+            ],
+            "notepad": "Use with care, always set productexpire date!",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Welcome pack first 50",
+            "managed_by_user": "N",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 61,
+            "i_product_group": null,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Pay-as-you-eat mobile data",
+            "shared": "N",
+            "addon_priority": 10,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 40,
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "{REQUIRED!}-PAYE mobile data",
+            "description": "",
+            "included_services": [
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "",
+            "volume_discount_plan_name": "PAYE 2023",
+            "managed_by_user": "Y",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 63,
+            "i_product_group": 2,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Time-limited GB packages",
+            "shared": "N",
+            "addon_priority": 20,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 30,
+            "product_group_name": "GB wallets",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "{REQUIRED!}-Time-limited GB packages",
+            "description": "",
+            "included_services": [
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Wall-T-expire",
+            "managed_by_user": "Y",
+            "hidden": "N",
+            "fraud_protection": "None"
+        },
+        {
+            "i_product": 62,
+            "i_product_group": 2,
+            "i_reseller_subscription": null,
+            "default_i_acl": 155,
+            "iso_4217": "USD",
+            "end_user_name": "Time-unlimited GB wallet",
+            "shared": "N",
+            "addon_priority": 15,
+            "allowed_with_any_product": "N",
+            "breakage": 0,
+            "info_url": "",
+            "realm": "msisdn",
+            "i_subscription": null,
+            "i_vd_plan": 31,
+            "product_group_name": "GB wallets",
+            "allowed_products": [
+                60
+            ],
+            "i_account_role": 8,
+            "service_flag_locks": "   1",
+            "name": "{REQUIRED!}-Time-unlimited GB packages",
+            "description": "",
+            "included_services": [
+                105
+            ],
+            "notepad": "",
+            "end_user_description": "",
+            "volume_discount_plan_name": "Wall-T-unlim",
+            "managed_by_user": "Y",
+            "hidden": "N",
+            "fraud_protection": "None"
+        }
+    ]
+}

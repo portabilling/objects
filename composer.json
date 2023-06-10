@@ -1,0 +1,42 @@
+{
+    "name": "porta/objects",
+    "description": "PortaOne billing API objects hepler classes",
+    "type": "library",
+    "version": "dev-master", 
+    "homepage": "https://github.com/portabilling/objects",
+    "keywords": ["portaone", "billing", "api", "portastart"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Pavlyuts",
+            "email": "alexey@pavlyuts.ru"
+        }
+    ],
+    "support": {
+        "email": "alexey@pavlyuts.ru",
+        "issues": "https://github.com/portabilling/objects/issues",
+        "wiki": "https://github.com/portabilling/objects/wiki",
+        "source": "https://github.com/portabilling/objects"
+    },
+    "require": {
+        "php": "^7.4",
+        "porta/billing": "^0.1",
+        "porta/datetime": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Porta\\Objects\\": "Porta/Objects/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PortaObjectsTest\\": "Test/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --configuration Test/configuration.xml Test --coverage-text"
+    }
+}

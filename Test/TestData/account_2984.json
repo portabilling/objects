@@ -1,0 +1,1370 @@
+{
+    "account_info": {
+        "i_product": 60,
+        "activation_date": "2023-05-12",
+        "product_visible_name": "PTWaves mobile for residents",
+        "iso_4217": "USD",
+        "iso_639_1": "en",
+        "out_date_format": "YYYY-MM-DD",
+        "i_account": 2984,
+        "opening_balance": 0,
+        "has_custom_fields": 1,
+        "customer_bill_suspended": 0,
+        "blocked": "N",
+        "id": "6808881050@msisdn",
+        "out_date_time_format": "YYYY-MM-DD HH24:MI:SS",
+        "last_usage": "2023-05-26 17:19:16",
+        "h323_password": "26I7jw",
+        "bill_status": "O",
+        "time_zone_name": "Pacific\/Palau",
+        "i_lang": "en",
+        "life_time": null,
+        "i_role": 6,
+        "idle_days": 0,
+        "address_line_2": "",
+        "first_usage": "2023-05-11",
+        "balance": 20.98506,
+        "in_date_format": "YYYY-MM-DD",
+        "is_active": 1,
+        "phone1": "",
+        "cust_bill_suspension_delayed": 0,
+        "i_subscriber": 2953,
+        "i_time_zone": 268,
+        "customer_name": "PP Mobile test",
+        "phone2": "",
+        "cont1": "",
+        "midinit": "",
+        "salutation": "",
+        "assigned_addons": [
+            {
+                "i_product": 86,
+                "i_product_group": 7,
+                "i_reseller_subscription": null,
+                "default_i_acl": 155,
+                "iso_4217": "USD",
+                "end_user_name": "Unlimited Mobile Data DAILY",
+                "shared": "N",
+                "addon_effective_to": "2023-05-31 14:59:59",
+                "addon_priority": 30,
+                "breakage": 0,
+                "info_url": "",
+                "realm": "msisdn",
+                "i_subscription": 96,
+                "i_vd_plan": 48,
+                "product_subscription": {
+                    "i_product": 86,
+                    "fee": 45,
+                    "generate_daily_charge": "Y",
+                    "iso_4217": "USD",
+                    "effective_fee": 45,
+                    "i_product_subscription": 93,
+                    "activation_mode": 1,
+                    "i_subscription": 96,
+                    "multi_month_discount_list": [],
+                    "charge_model": 0,
+                    "name": "Unlim Data daily",
+                    "invoice_description": "Unlim Data, daily",
+                    "periodic_fees": [
+                        [
+                            {
+                                "i_billing_period": 4,
+                                "periods": 0,
+                                "fee": 45,
+                                "i_subscription": 96
+                            },
+                            {
+                                "i_billing_period": 1,
+                                "periods": 0,
+                                "fee": 1.5,
+                                "i_subscription": 96
+                            },
+                            {
+                                "i_billing_period": 3,
+                                "periods": 0,
+                                "fee": 22.5,
+                                "i_subscription": 96
+                            },
+                            {
+                                "i_billing_period": 2,
+                                "periods": 0,
+                                "fee": 10.5,
+                                "i_subscription": 96
+                            }
+                        ]
+                    ],
+                    "description": "",
+                    "multiple": 0,
+                    "activation_fee": 0
+                },
+                "i_account_role": 8,
+                "subscription_discount_list": [],
+                "service_flag_locks": "   1",
+                "name": "Unli Data daily",
+                "description": "",
+                "addon_effective_from": "2023-05-15 09:34:58",
+                "end_user_description": "DAILY unlimited mobile internet<br>SUBSCRIPTION WILL RENEW AT 11:59pm TONIGHT",
+                "volume_discount_plan_name": "Unlim Data Daily",
+                "managed_by_user": "N",
+                "hidden": "N",
+                "fraud_protection": "None"
+            },
+            {
+                "i_product": 87,
+                "i_product_group": 3,
+                "i_reseller_subscription": null,
+                "default_i_acl": 155,
+                "iso_4217": "USD",
+                "end_user_name": "Unlimited PT Waves calls & texts",
+                "shared": "N",
+                "addon_effective_to": "2023-05-31 14:59:59",
+                "addon_priority": 30,
+                "breakage": 0,
+                "info_url": "",
+                "realm": "msisdn",
+                "i_subscription": 86,
+                "i_vd_plan": 42,
+                "product_subscription": {
+                    "i_product": 87,
+                    "fee": 10,
+                    "generate_daily_charge": "N",
+                    "iso_4217": "USD",
+                    "effective_fee": 10,
+                    "i_product_subscription": 94,
+                    "activation_mode": 1,
+                    "i_subscription": 86,
+                    "multi_month_discount_list": [],
+                    "charge_model": 2,
+                    "name": "Unlim PTWaves",
+                    "advance_periods": 1,
+                    "invoice_description": "Unlim PTWaves",
+                    "periodic_fees": [
+                        [
+                            {
+                                "i_billing_period": 4,
+                                "periods": 0,
+                                "fee": 10,
+                                "i_subscription": 86
+                            },
+                            {
+                                "i_billing_period": 1,
+                                "periods": 0,
+                                "fee": 0.33333,
+                                "i_subscription": 86
+                            },
+                            {
+                                "i_billing_period": 3,
+                                "periods": 0,
+                                "fee": 5,
+                                "i_subscription": 86
+                            },
+                            {
+                                "i_billing_period": 2,
+                                "periods": 0,
+                                "fee": 2.33333,
+                                "i_subscription": 86
+                            }
+                        ]
+                    ],
+                    "description": "",
+                    "rounding": 2,
+                    "multiple": 0,
+                    "activation_fee": 0
+                },
+                "i_account_role": 8,
+                "subscription_discount_list": [],
+                "name": "Unli PT",
+                "description": "",
+                "addon_effective_from": "2023-05-21 18:47:13",
+                "end_user_description": "Unli calls & texts to ALL PT subscribers (mobile data NOT included)<br>Subscription will renew at 11:59pm on the last day of the month.",
+                "volume_discount_plan_name": "Unlim PTWaves",
+                "managed_by_user": "N",
+                "hidden": "N",
+                "fraud_protection": "None"
+            },
+            {
+                "i_product": 89,
+                "i_product_group": 3,
+                "i_reseller_subscription": null,
+                "default_i_acl": 155,
+                "iso_4217": "USD",
+                "end_user_name": "Unli-data & Unli-PT bundle MONTHLY",
+                "shared": "N",
+                "addon_priority": 30,
+                "breakage": 0,
+                "info_url": "",
+                "realm": "msisdn",
+                "i_subscription": 99,
+                "i_vd_plan": 45,
+                "product_subscription": {
+                    "i_product": 89,
+                    "fee": 35,
+                    "generate_daily_charge": "N",
+                    "iso_4217": "USD",
+                    "effective_fee": 35,
+                    "i_product_subscription": 96,
+                    "activation_mode": 1,
+                    "i_subscription": 99,
+                    "multi_month_discount_list": [],
+                    "charge_model": 2,
+                    "name": "Unlim PTWaves + Data",
+                    "advance_periods": 1,
+                    "invoice_description": "Unlim PTWaves + Data",
+                    "periodic_fees": [
+                        [
+                            {
+                                "i_billing_period": 4,
+                                "periods": 0,
+                                "fee": 35,
+                                "i_subscription": 99
+                            },
+                            {
+                                "i_billing_period": 1,
+                                "periods": 0,
+                                "fee": 1.16667,
+                                "i_subscription": 99
+                            },
+                            {
+                                "i_billing_period": 3,
+                                "periods": 0,
+                                "fee": 17.5,
+                                "i_subscription": 99
+                            },
+                            {
+                                "i_billing_period": 2,
+                                "periods": 0,
+                                "fee": 8.16667,
+                                "i_subscription": 99
+                            }
+                        ]
+                    ],
+                    "description": "",
+                    "multiple": 0,
+                    "activation_fee": 0
+                },
+                "i_account_role": 8,
+                "subscription_discount_list": [],
+                "name": "Unli PT+Data monthly",
+                "description": "",
+                "addon_effective_from": "2023-05-31 15:00:00",
+                "end_user_description": "MONTHLY unli mobile data PLUS unli calls & texts to ALL PT subscribers (IDD and calls & texts to PNCC are NOT included)<br>Subscription will renew at 11:59pm on the last day of the month.",
+                "volume_discount_plan_name": "Unlim PTWaves + Data",
+                "managed_by_user": "N",
+                "hidden": "N",
+                "fraud_protection": "None"
+            },
+            {
+                "i_product": 63,
+                "i_product_group": 2,
+                "i_reseller_subscription": null,
+                "default_i_acl": 155,
+                "iso_4217": "USD",
+                "end_user_name": "Time-limited GB packages",
+                "shared": "N",
+                "addon_priority": 20,
+                "breakage": 0,
+                "info_url": "",
+                "realm": "msisdn",
+                "i_subscription": null,
+                "i_vd_plan": 30,
+                "i_account_role": 8,
+                "service_flag_locks": "   1",
+                "name": "{REQUIRED!}-Time-limited GB packages",
+                "description": "",
+                "addon_effective_from": "2023-05-11 21:32:30",
+                "end_user_description": "",
+                "volume_discount_plan_name": "Wall-T-expire",
+                "managed_by_user": "Y",
+                "hidden": "N",
+                "fraud_protection": "None"
+            },
+            {
+                "i_product": 62,
+                "i_product_group": 2,
+                "i_reseller_subscription": null,
+                "default_i_acl": 155,
+                "iso_4217": "USD",
+                "end_user_name": "Time-unlimited GB wallet",
+                "shared": "N",
+                "addon_priority": 15,
+                "breakage": 0,
+                "info_url": "",
+                "realm": "msisdn",
+                "i_subscription": null,
+                "i_vd_plan": 31,
+                "i_account_role": 8,
+                "service_flag_locks": "   1",
+                "name": "{REQUIRED!}-Time-unlimited GB packages",
+                "description": "",
+                "addon_effective_from": "2023-05-11 21:32:30",
+                "end_user_description": "",
+                "volume_discount_plan_name": "Wall-T-unlim",
+                "managed_by_user": "Y",
+                "hidden": "N",
+                "fraud_protection": "None"
+            },
+            {
+                "i_product": 61,
+                "i_product_group": null,
+                "i_reseller_subscription": null,
+                "default_i_acl": 155,
+                "iso_4217": "USD",
+                "end_user_name": "Pay-as-you-eat mobile data",
+                "shared": "N",
+                "addon_priority": 10,
+                "breakage": 0,
+                "info_url": "",
+                "realm": "msisdn",
+                "i_subscription": null,
+                "i_vd_plan": 40,
+                "i_account_role": 8,
+                "service_flag_locks": "   1",
+                "name": "{REQUIRED!}-PAYE mobile data",
+                "description": "",
+                "addon_effective_from": "2023-05-11 21:32:30",
+                "end_user_description": "",
+                "volume_discount_plan_name": "PAYE 2023",
+                "managed_by_user": "Y",
+                "hidden": "N",
+                "fraud_protection": "None"
+            }
+        ],
+        "billing_model": 1,
+        "customer_bill_status": "O",
+        "customer_blocked": "N",
+        "cont2": "",
+        "out_time_format": "HH24:MI:SS",
+        "service_features": [
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "unified_messaging",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "0"
+                        ],
+                        "name": "mailbox_limit",
+                        "values": [
+                            "10"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "fax_only_mode",
+                        "values": [
+                            "N"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "line_sharing",
+                "attributes": [],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "endpoint_redirect",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "rtpp_level",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "individual_routing_plan",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "i_routing_plan",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "legal_intercept",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "external_voicemail",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "access_number",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "cnam_lookup",
+                "attributes": [],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "Y",
+                "name": "call_wait_limit",
+                "attributes": [],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "7",
+                "effective_flag_value": "7",
+                "name": "default_action",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "30"
+                        ],
+                        "name": "timeout",
+                        "values": [
+                            "30"
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "phonebook",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "favorite_allowed_patterns",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "favorite_change_lock_days",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "max_favorites",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "enable_abbrev_dial",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "1"
+                        ],
+                        "name": "abbrev_dial",
+                        "values": [
+                            "1"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "favorite_change_allowed",
+                        "values": [
+                            "N"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "\/",
+                "effective_flag_value": "N",
+                "name": "sip_static_contact",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "use_tcp",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "user",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "port",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "host",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "clir",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "blocked",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "clir_note",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "auto_attendant",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "auto_attendant_note",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "Y",
+                "effective_flag_value": "Y",
+                "name": "msg_service_policy",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "133"
+                        ],
+                        "name": "id",
+                        "values": [
+                            "133"
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "voice_service_policy",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "id",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "distinctive_ring_vpn",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "Y",
+                "name": "netaccess_sessions",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "1"
+                        ],
+                        "name": "max_sessions",
+                        "values": [
+                            "1"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "Y",
+                "name": "sip_dynamic_registration",
+                "attributes": [],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "cli",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "display_number_allow_external",
+                        "values": []
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "centrex",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "display_number",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "Y"
+                        ],
+                        "name": "display_number_check",
+                        "values": [
+                            "Y"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "display_name_override",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "A"
+                        ],
+                        "name": "attest",
+                        "values": [
+                            "A"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "account_group",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "display_name",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "N",
+                "effective_flag_value": "N",
+                "name": "voice_roaming_protection",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "N",
+                "effective_flag_value": "N",
+                "name": "voice_fup",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "user_ivr_application",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "max_numbers",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "N",
+                "effective_flag_value": "N",
+                "name": "voice_authentication",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "pin",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "Y",
+                "name": "music_on_hold",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "1"
+                        ],
+                        "name": "i_moh",
+                        "values": [
+                            "1"
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "emergency",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "emergency_administrative_unit",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "Y",
+                "name": "clip",
+                "attributes": [],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "netaccess_static_ip",
+                "attributes": [
+                    {
+                        "effective_values": [],
+                        "name": "routed_network",
+                        "values": []
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "address",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "netmask",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "forward_mode",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "max_forwards",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "dtmf_control",
+                        "values": [
+                            "N"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "voice_pass_through",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "outgoing_access_number",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "call_barring",
+                "attributes": [
+                    {
+                        "effective_values": [],
+                        "name": "call_barring_rules",
+                        "values": []
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "cli_verify",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "Y"
+                        ],
+                        "name": "display_name_indicator",
+                        "values": [
+                            "Y"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "^",
+                "effective_flag_value": "N",
+                "name": "cli_trust",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "accept_caller",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "supply_caller",
+                        "values": [
+                            "N"
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": null,
+                "name": "wifi_speed_limit",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "tx_rate",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "rx_rate",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "call_processing",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "pbx_management",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "*62"
+                        ],
+                        "name": "cs_bulk_management",
+                        "values": [
+                            "*62"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "*61"
+                        ],
+                        "name": "cs_individual_management",
+                        "values": [
+                            "*61"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "ringback_tone",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "i_ringback_tone",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "N",
+                "effective_flag_value": "N",
+                "name": "sim_calls_limit",
+                "attributes": [],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "Y",
+                "name": "netaccess_policy",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "30"
+                        ],
+                        "name": "access_policy",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "\/",
+                "effective_flag_value": "N",
+                "name": "voice_dialing",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "translate_cli_out",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "i_dial_rule",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "translate_cli_in",
+                        "values": [
+                            "N"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "translate_cld_in",
+                        "values": [
+                            "N"
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "cps_account_limit",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "normal"
+                        ],
+                        "name": "burst_method",
+                        "values": [
+                            "normal"
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "cps_max",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "\/",
+                "effective_flag_value": "N",
+                "name": "voice_location",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "allow_roaming",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "primary_location",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "primary_location_data",
+                        "values": [
+                            null
+                        ]
+                    },
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "emergency_administrative_unit",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": "N",
+                "name": "sms_routing",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "N"
+                        ],
+                        "name": "update_netnumber_db",
+                        "values": [
+                            "N"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "~",
+                "effective_flag_value": null,
+                "name": "conf_enabled",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "64"
+                        ],
+                        "name": "max_participants",
+                        "values": [
+                            "64"
+                        ]
+                    }
+                ],
+                "locks": [
+                    "user"
+                ]
+            },
+            {
+                "locked": 0,
+                "flag_value": "N",
+                "effective_flag_value": "N",
+                "name": "associated_number",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            null
+                        ],
+                        "name": "redirect_number",
+                        "values": [
+                            null
+                        ]
+                    }
+                ],
+                "locks": []
+            },
+            {
+                "locked": 0,
+                "flag_value": "Y",
+                "effective_flag_value": "Y",
+                "name": "lan_name",
+                "attributes": [
+                    {
+                        "effective_values": [
+                            "en"
+                        ],
+                        "name": "iso_639_1",
+                        "values": [
+                            "en"
+                        ]
+                    }
+                ],
+                "locks": []
+            }
+        ],
+        "ecommerce_enabled": "N",
+        "i_account_role": 8,
+        "first_usage_time": "2023-05-11 21:32:14",
+        "in_time_format": "HH24:MI:SS",
+        "expiration_date": null,
+        "service_flags": "",
+        "note": "",
+        "bcc": "",
+        "included_services": [],
+        "i_account_balance_control_type": 3,
+        "issue_date": "2023-05-11",
+        "faxnum": "",
+        "i_customer": 2543,
+        "i_acl": 155,
+        "inactivity_expire_time": null,
+        "companyname": "",
+        "credit_limit": null,
+        "product_name": "Mobile residential"
+    }
+}
