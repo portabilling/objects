@@ -2,7 +2,6 @@
     "name": "porta/objects",
     "description": "PortaOne billing API objects hepler classes",
     "type": "library",
-    "version": "dev-master", 
     "homepage": "https://github.com/portabilling/objects",
     "keywords": ["portaone", "billing", "api", "portastart"],
     "license": "MIT",
