@@ -19,7 +19,7 @@
         "source": "https://github.com/portabilling/objects"
     },
     "require": {
-        "php": "^7.4",
+        "php": ">=7.4",
         "porta/billing": "^0.1",
         "porta/datetime": "^0.1"
     },
