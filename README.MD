@@ -9,7 +9,7 @@ This package intended to simplify manipulations with the most importand Portabil
 In the Composer storage. Just add proper require section:
 
     "require": {
-        "porta/objects": "^0.0"
+        "porta/objects": "^0.1"
     }
 
 ## Dependencies
