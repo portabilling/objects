@@ -11,7 +11,8 @@ namespace Porta\Objects\Defs;
 /**
  *  Interface for Portabilling objects definition
  */
-interface DefInterface {
+interface DefInterface
+{
 
     public function getKey(): string;
 

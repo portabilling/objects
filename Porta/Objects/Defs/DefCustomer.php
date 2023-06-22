@@ -13,7 +13,8 @@ use Porta\Objects\Customer;
 /**
  * Definition class for Customer
  */
-class DefCustomer extends DefBase {
+class DefCustomer extends DefBase
+{
 
     const OPTION_FIELDS = [
         Customer::LOAD_DETAILED_INFO => 'detailed_info',
@@ -21,8 +22,8 @@ class DefCustomer extends DefBase {
         Customer::LOAD_TIME_ZONE_NAME => 'get_time_zone_name',
     ];
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct('customer', 'Customer', \Porta\Objects\Customer::class);
     }
-
 }

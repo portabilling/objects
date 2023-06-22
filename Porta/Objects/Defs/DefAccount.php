@@ -14,7 +14,8 @@ use Porta\Objects\Account;
  * Defenition for Account
  *
  */
-class DefAccount extends DefBase {
+class DefAccount extends DefBase
+{
 
     const OPTION_FIELDS = [
         Account::LOAD_DETAILED_INFO => 'detailed_info',
@@ -27,8 +28,8 @@ class DefAccount extends DefBase {
         Account::LOAD_WITHOUT_SERVICE_FEATURES => 'without_service_features',
     ];
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct('account', 'Account', \Porta\Objects\Account::class);
     }
-
 }

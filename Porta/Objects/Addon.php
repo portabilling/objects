@@ -12,7 +12,8 @@ namespace Porta\Objects;
  * Wrapper for Addon product
  *
  */
-class Addon extends PortaObject {
+class Addon extends PortaObject
+{
 
     // Load options
     const LOAD_DETAILED_INFO = 1;
@@ -23,11 +24,13 @@ class Addon extends PortaObject {
 
     protected ?SubscriptionUsed $subscription = null;
 
-    public function __construct(array $data) {
+    public function __construct(array $data)
+    {
         parent::__construct($data, new Defs\DefAddon());
     }
 
-    public function setData(array $data): self {
+    public function setData(array $data): self
+    {
         parent::setData($data);
         if (isset($this['product_subscription'])) {
             $this->subscription = new SubscriptionUsed($this['product_subscription']);
@@ -35,50 +38,59 @@ class Addon extends PortaObject {
         return $this;
     }
 
-    public function hasSubscription(): bool {
+    public function hasSubscription(): bool
+    {
         return isset($this->subscription);
     }
 
-    public function getSubscription(): ?SubscriptionUsed {
+    public function getSubscription(): ?SubscriptionUsed
+    {
         return $this->subscription;
     }
 
-    public function updateSubscriptionWithActiveData(array $data): self {
+    public function updateSubscriptionWithActiveData(array $data): self
+    {
         if (!is_null($this->subscription)) {
             $this->subscription->updateWithActiveData($data);
         }
         return $this;
     }
 
-    public function getPaidTo(): ?\PortaDateTime {
+    public function getPaidTo(): ?\PortaDateTime
+    {
         return is_null($this->subscription) ? null : $this->subscription->getPaidTo();
     }
 
-    public function setEffectiveFrom(?\DateTimeInterface $from): self {
+    public function setEffectiveFrom(?\DateTimeInterface $from): self
+    {
         $this[self::FIELD_EFFECTIVE_FROM] = is_null($from) ? null : \PortaDateTime::formatDateTime($from);
         return $this;
     }
 
-    public function getEffectiveFrom(): ?\PortaDateTime {
+    public function getEffectiveFrom(): ?\PortaDateTime
+    {
         if (isset($this[self::FIELD_EFFECTIVE_FROM])) {
             return \PortaDateTime::fromPortaString($this[self::FIELD_EFFECTIVE_FROM], PortaFactory::$defaultTimezone);
         }
         return null;
     }
 
-    public function getEffectiveTo(): ?\PortaDateTime {
+    public function getEffectiveTo(): ?\PortaDateTime
+    {
         if (isset($this[self::FIELD_EFFECTIVE_TO])) {
             return \PortaDateTime::fromPortaString($this[self::FIELD_EFFECTIVE_TO], PortaFactory::$defaultTimezone);
         }
         return null;
     }
 
-    public function setEffectiveTo(?\DateTimeInterface $to = null): self {
+    public function setEffectiveTo(?\DateTimeInterface $to = null): self
+    {
         $this[self::FIELD_EFFECTIVE_TO] = is_null($to) ? null : \PortaDateTime::formatDateTime($to);
         return $this;
     }
 
-    public function getUpdateData(): array {
+    public function getUpdateData(): array
+    {
         return [
             $this->def->getIndexField() => $this->index,
             Addon::FIELD_EFFECTIVE_FROM =>
@@ -92,19 +104,22 @@ class Addon extends PortaObject {
         ];
     }
 
-    public function isActiveAt(\DateTimeInterface $moment): bool {
+    public function isActiveAt(\DateTimeInterface $moment): bool
+    {
         $from = $this->getEffectiveFrom();
         $to = $this->getEffectiveTo();
-        return !is_null($from) && ($moment >= $from) && (is_null($to) || ($moment <= $to));
+        return !is_null($from) && ($moment >= $from) && (is_null($to) || ($moment
+                <= $to));
     }
 
-    public function saved(): self {
+    public function saved(): self
+    {
         $this->setData($this->getData());
         return $this;
     }
 
-    protected function isFieldAllowedToWrite($offset): bool {
+    protected function isFieldAllowedToWrite($offset): bool
+    {
         return in_array($offset, [Addon::FIELD_EFFECTIVE_FROM, Addon::FIELD_EFFECTIVE_TO]);
     }
-
 }

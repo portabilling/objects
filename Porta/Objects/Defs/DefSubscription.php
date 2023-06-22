@@ -13,7 +13,8 @@ use Porta\Objects\Subscription;
 /**
  * Definition for Subscription
  */
-class DefSubscription extends DefBase {
+class DefSubscription extends DefBase
+{
 
     const OPTION_FIELDS = [
         Subscription::LOAD_WITH_FEES => 'with_fees',
@@ -21,13 +22,14 @@ class DefSubscription extends DefBase {
         Subscription::LOAD_CHECK_USAGE_BY_RESELLERS => 'check_usage_by_resellers',
     ];
 
-    public function __construct(bool $readOnly = false) {
+    public function __construct(bool $readOnly = false)
+    {
         parent::__construct('subscription', 'Subscription', Subscription::class, $readOnly);
     }
 
     // Non-regular field name used
-    public function getListFieldName(): string {
+    public function getListFieldName(): string
+    {
         return 'subscriptions';
     }
-
 }

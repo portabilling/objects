@@ -14,7 +14,8 @@ use Porta\Objects\Exception\PortaObjectsException;
  * Extended subscription class to handle subscription which isalready attached
  *
  */
-class SubscriptionUsed extends Subscription {
+class SubscriptionUsed extends Subscription
+{
 
     const FIELD_STATUS = 'int_status';
     const STATUS_ACTIVE = 1;
@@ -23,22 +24,26 @@ class SubscriptionUsed extends Subscription {
 
     protected $activeLoaded = false;
 
-    public function isActiveDataLoaded(): bool {
+    public function isActiveDataLoaded(): bool
+    {
         return $this->activeLoaded;
     }
 
-    public function updateWithActiveData(array $data): self {
+    public function updateWithActiveData(array $data): self
+    {
         $this->activeLoaded = true;
         $this->data = array_merge($this->data, $data);
         return $this;
     }
 
-    public function getStatus(): int {
+    public function getStatus(): int
+    {
         $this->requireActiveData();
         return $this[self::FIELD_STATUS];
     }
 
-    public function getPaidTo(): ?\PortaDateTime {
+    public function getPaidTo(): ?\PortaDateTime
+    {
         $this->requireActiveData();
         if (isset($this['billed_to'])) {
             return \PortaDateTime::fromPortaDateString($this['billed_to'], PortaFactory::$defaultTimezone)->lastMoment();
@@ -47,19 +52,21 @@ class SubscriptionUsed extends Subscription {
         }
     }
 
-    public function getEffectiveFee(): float {
+    public function getEffectiveFee(): float
+    {
         return $this['effective_fee'] ?? 0;
     }
 
-    protected function requireActiveData(): self {
+    protected function requireActiveData(): self
+    {
         if (!$this->activeLoaded) {
             throw new Exception\PortaObjectsException("Tried to access active subscription data before it was updated with active data");
         }
         return $this;
     }
 
-    protected function isFieldAllowedToWrite($offset): bool {
+    protected function isFieldAllowedToWrite($offset): bool
+    {
         return false;
     }
-
 }

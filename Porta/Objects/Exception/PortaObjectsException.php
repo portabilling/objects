@@ -12,6 +12,7 @@ namespace Porta\Objects\Exception;
  * Exception to throw on errora
  *
  */
-class PortaObjectsException extends \Exception {
-    
+class PortaObjectsException extends \Exception
+{
+
 }

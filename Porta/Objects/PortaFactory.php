@@ -9,7 +9,7 @@
 namespace Porta\Objects;
 
 use Porta\Billing\Billing;
-use Porta\Billing\AsyncOperation;
+use Porta\Billing\BulkOperation;
 use Porta\Objects\Defs\DefInterface;
 
 /**
@@ -17,7 +17,8 @@ use Porta\Objects\Defs\DefInterface;
  *
  * @author alexe
  */
-class PortaFactory {
+class PortaFactory
+{
 
     static Billing $billing;
     static string $defaultTimezone;
@@ -28,19 +29,22 @@ class PortaFactory {
      * @param Billing $billing
      * @param string|null $defaultTimezone
      */
-    public static function setup(Billing $billing, string $defaultTimezone = 'UTC') {
+    public static function setup(Billing $billing, string $defaultTimezone = 'UTC')
+    {
         static::$billing = $billing;
         static::$defaultTimezone = $defaultTimezone;
     }
 
     /* static methods to load objects from from biling */
 
-    public static function createObjectFromData(array $data, DefInterface $def) {
+    public static function createObjectFromData(array $data, DefInterface $def)
+    {
         $className = $def->getClass();
         return new $className($data, $def);
     }
 
-    public static function createObjectsFromArray(array $list, DefInterface $def): array {
+    public static function createObjectsFromArray(array $list, DefInterface $def): array
+    {
         $result = [];
         foreach ($list as $data) {
             $entity = static::createObjectFromData($data, $def);
@@ -49,7 +53,9 @@ class PortaFactory {
         return $result;
     }
 
-    public static function loadByIndex(int $index, DefInterface $def, array $params = [], int $options = 0) {
+    public static function loadByIndex(int $index, DefInterface $def, array $params
+            = [], int $options = 0)
+    {
         $answer = PortaFactory::$billing->call(
                 $def->getLoadMethod(),
                 array_merge([$def->getIndexField() => $index], $def->buildLoadOptions($options), $params)
@@ -57,15 +63,17 @@ class PortaFactory {
         return static::makeFromAnswer($answer, $def);
     }
 
-    public static function loadAsyncByIndex(array $indices, DefInterface $def, array $params = [], int $options = 0, int $concurency = 20) {
+    public static function loadConcurrentByIndex(array $indices, DefInterface $def, array $params
+            = [], int $options = 0, int $concurency = 20)
+    {
         $operations = [];
         $readyParams = array_merge($def->buildLoadOptions($options), $params);
         $endpoint = $def->getLoadMethod();
         $indexField = $def->getIndexField();
         foreach ($indices as $index) {
-            $operations[] = new AsyncOperation($endpoint, array_merge([$indexField => $index], $readyParams));
+            $operations[] = new BulkOperation($endpoint, array_merge([$indexField => $index], $readyParams));
         }
-        PortaFactory::$billing->callAsync($operations, $concurency);
+        PortaFactory::$billing->callConcurrent($operations, $concurency);
         $result = [];
         $resultField = $def->getLoadFieldName();
         foreach ($operations as $operation) {
@@ -80,14 +88,15 @@ class PortaFactory {
         return $result;
     }
 
-    public static function loadAsyncSupplamentaryByIndex(array $indices, string $method,
+    public static function loadConcurrentSupplamentaryByIndex(array $indices, string $method,
             string $keyField, string $answerField,
-            array $params = [], int $concurrency = 20): array {
+            array $params = [], int $concurrency = 20): array
+    {
         $operations = [];
         foreach ($indices as $index) {
-            $operations[$index] = new AsyncOperation($method, array_merge([$keyField => $index], $params));
+            $operations[$index] = new BulkOperation($method, array_merge([$keyField => $index], $params));
         }
-        PortaFactory::$billing->callAsync($operations, $concurency);
+        PortaFactory::$billing->callConcurrent($operations, $concurency);
         $result = [];
         foreach ($operations as $key => $operation) {
             $data = $operation->getResponse();
@@ -98,7 +107,9 @@ class PortaFactory {
         return $result;
     }
 
-    public static function loadList(DefInterface $def, array $params = [], int $options = 0): ?array {
+    public static function loadList(DefInterface $def, array $params = [], int $options
+            = 0): ?array
+    {
         $answer = PortaFactory::$billing->call($def->getListMethod(), array_merge($def->buildLoadOptions($options), $params));
         $element = $def->getListFieldName();
         if (!isset($answer[$element])) {
@@ -107,7 +118,9 @@ class PortaFactory {
         return static::createObjectsFromArray($answer[$element], $def);
     }
 
-    public static function loadListGeneratorBulk(DefInterface $def, int $limit, array $params = [], int $options = 0) {
+    public static function loadListGeneratorBulk(DefInterface $def, int $limit, array $params
+            = [], int $options = 0)
+    {
         $params = array_merge($def->buildLoadOptions($options), $params, ['offset' => 0, 'limit' => $limit]);
         do {
             $result = self::loadList($def, $params, $options);
@@ -119,7 +132,9 @@ class PortaFactory {
         } while (count($result) == $limit);
     }
 
-    public static function loadListGeneratorByOne(DefInterface $def, int $limit, array $params = [], int $options = 0) {
+    public static function loadListGeneratorByOne(DefInterface $def, int $limit, array $params
+            = [], int $options = 0)
+    {
         foreach (self::loadListGeneratorBulk($def, $limit, $params, $options) as $group) {
             foreach ($group as $element) {
                 yield $element;
@@ -127,15 +142,20 @@ class PortaFactory {
         }
     }
 
-    public static function loadAccountByIndex(int $index, int $options = 0, array $params = []): ?Account {
+    public static function loadAccountByIndex(int $index, int $options = 0, array $params
+            = []): ?Account
+    {
         return static::loadAccount(array_merge(['i_account' => $index], $params), $options);
     }
 
-    public static function loadAccountById(string $id, int $options = 0, array $params = []): ?Account {
+    public static function loadAccountById(string $id, int $options = 0, array $params
+            = []): ?Account
+    {
         return static::loadAccount(array_merge(['id' => $id], $params), $options);
     }
 
-    protected static function loadAccount(array $params, int $options = 0): ?Account {
+    protected static function loadAccount(array $params, int $options = 0): ?Account
+    {
         $defAccount = new Defs\DefAccount();
         $answer = PortaFactory::$billing->call(
                 $defAccount->getLoadMethod(),
@@ -150,12 +170,12 @@ class PortaFactory {
         return $account;
     }
 
-    protected static function makeFromAnswer(array $answer, DefInterface $def) {
+    protected static function makeFromAnswer(array $answer, DefInterface $def)
+    {
         $element = $def->getLoadFieldName();
         if (!isset($answer[$element]) || ([] == $answer[$element])) {
             return null;
         }
         return static::createObjectFromData($answer[$element], $def);
     }
-
 }

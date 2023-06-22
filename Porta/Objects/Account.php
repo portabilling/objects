@@ -15,7 +15,8 @@ use Porta\Objects\Addon;
 /**
  * Wrapper class for Account
  */
-class Account extends PortaObject {
+class Account extends PortaObject
+{
 
     use \Porta\Objects\Traits\StatusAndBlocked;
 
@@ -83,18 +84,21 @@ class Account extends PortaObject {
     /** @property Addon[] $availableAddons */
     protected ?array $availableAddons = null;
 
-    public function __construct(array $data) {
+    public function __construct(array $data)
+    {
         parent::__construct($data, new Defs\DefAccount());
     }
 
-    public function setData(array $data): Account {
+    public function setData(array $data): Account
+    {
         parent::setData($data);
         $this->activeAddons = PortaFactory::createObjectsFromArray($this['assigned_addons'] ?? [], new Defs\DefAddon());
         unset($this->data['assigned_addons']);
         return $this;
     }
 
-    public function getData(): array {
+    public function getData(): array
+    {
         $data = parent::getData();
         $data[self::FIELD_ASSIGNED_ADDONS] = [];
         foreach ($this->activeAddons as $addon) {
@@ -103,39 +107,48 @@ class Account extends PortaObject {
         return $data;
     }
 
-    public function isUpdated(): bool {
+    public function isUpdated(): bool
+    {
         return parent::isUpdated() || $this->isAddonsChanged();
     }
 
-    public function getUpdateData(): array {
+    public function getUpdateData(): array
+    {
         return array_merge(parent::getUpdateData(), $this->getAddonsUpdateData());
     }
 
-    public function getId(): string {
+    public function getId(): string
+    {
         return $this->getRequired('id');
     }
 
-    public function getIdNoRealm(): string {
+    public function getIdNoRealm(): string
+    {
         return explode('@', $this->getId())[0];
     }
 
-    public function getBillingModel(): int {
+    public function getBillingModel(): int
+    {
         return $this->getRequired(self::FIELD_BILL_MODEL);
     }
 
-    public function getRole(): int {
+    public function getRole(): int
+    {
         return $this->getRequired(self::FIELD_ROLE);
     }
 
-    public function getCustomerIndex(): int {
+    public function getCustomerIndex(): int
+    {
         return $this->getRequired('i_customer');
     }
 
-    public function getCustomer(): ?Customer {
+    public function getCustomer(): ?Customer
+    {
         return $this->customer;
     }
 
-    public function setCustomer(Customer $customer): self {
+    public function setCustomer(Customer $customer): self
+    {
         if ($customer->getIndex() == $this->getRequired('i_customer')) {
             $this->customer = $customer;
             $customer->attachAccount($this);
@@ -146,26 +159,32 @@ class Account extends PortaObject {
         return $this;
     }
 
-    public function loadCustomer(int $options = 0, array $params = []): self {
+    public function loadCustomer(int $options = 0, array $params = []): self
+    {
         $this->setCustomer($this->loadParent(new Defs\DefCustomer(), $options, $params));
         return $this;
     }
 
-    public function getActiveAddon(int $addonIndex): ?Addon {
+    public function getActiveAddon(int $addonIndex): ?Addon
+    {
         return $this->activeAddons[$addonIndex] ?? null;
     }
 
-    public function getActiveAddonsIndices(): array {
+    public function getActiveAddonsIndices(): array
+    {
         return array_keys($this->activeAddons);
     }
 
     /** @return Addon[] */
-    public function getActiveAddons(): array {
+    public function getActiveAddons(): array
+    {
         return $this->activeAddons;
     }
 
-    public function addonAdd(int $addonIndex, ?\DateTimeInterface $effectiveFrom = null,
-            ?\DateTimeInterface $effectiveTo = null): self {
+    public function addonAdd(int $addonIndex, ?\DateTimeInterface $effectiveFrom
+            = null,
+            ?\DateTimeInterface $effectiveTo = null): self
+    {
 
         if (array_key_exists($addonIndex, $this->activeAddons)) {
             throw new PortaObjectsException("Trying to add add-on to account which is already exist");
@@ -182,40 +201,49 @@ class Account extends PortaObject {
         return $this;
     }
 
-    public function setAddonEffectiveTo(int $addonIndex, ?\DateTimeInterface $to): self {
-        (isset($this->activeAddons[$addonIndex])) ? $this->getActiveAddon($addonIndex)->setEffectiveTo($to) : null;
+    public function setAddonEffectiveTo(int $addonIndex, ?\DateTimeInterface $to): self
+    {
+        (isset($this->activeAddons[$addonIndex])) ? $this->getActiveAddon($addonIndex)->setEffectiveTo($to)
+                            : null;
         return $this;
     }
 
-    public function addonRemove(int $addonIndex): self {
+    public function addonRemove(int $addonIndex): self
+    {
         unset($this->activeAddons[$addonIndex]);
         $this->updatedData[Account::FIELD_ASSIGNED_ADDONS] = true;
         return $this;
     }
 
-    public function addonsRemove(array $addonIndices): self {
+    public function addonsRemove(array $addonIndices): self
+    {
         foreach ($addonIndices as $index) {
             $this->addonRemove($index);
         }
         return $this;
     }
 
-    public function getAvailableAddonsIndices(): array {
+    public function getAvailableAddonsIndices(): array
+    {
         return array_keys($this->getAvailableAddons());
     }
 
     /** @return Addon[] */
-    public function getAvailableAddons(): array {
-        return $this->availableAddons ?? $this->doLoadAvailableAddons(Addon::LOAD_DETAILED_INFO + Addon::LOAD_WITH_SUBSCRIPTION);
+    public function getAvailableAddons(): array
+    {
+        return $this->availableAddons ?? $this->doLoadAvailableAddons(Addon::LOAD_DETAILED_INFO
+                        + Addon::LOAD_WITH_SUBSCRIPTION);
     }
 
-    public function loadAvailableAddons(int $options = 3): self {
+    public function loadAvailableAddons(int $options = 3): self
+    {
         $this->doLoadAvailableAddons($options);
         return $this;
     }
 
     /** @return Addon[] */
-    protected function doLoadAvailableAddons(int $options = 3): array {
+    protected function doLoadAvailableAddons(int $options = 3): array
+    {
         $addons = PortaFactory::loadList(new Defs\DefAddon(), ['i_product' => $this['i_product']], $options);
         foreach ($this->getActiveAddonsIndices() as $index) {
             unset($addons[$index]);
@@ -224,7 +252,8 @@ class Account extends PortaObject {
         return $this->availableAddons;
     }
 
-    public function loadActiveSubscriptions(): self {
+    public function loadActiveSubscriptions(): self
+    {
         $result = PortaFactory::$billing->call('/Account/get_subscriptions',
                 [
                     'i_account' => $this->getIndex(),
@@ -238,7 +267,8 @@ class Account extends PortaObject {
         return $this;
     }
 
-    public function attachActiveSubscriptions(array $subscriptionsList): self {
+    public function attachActiveSubscriptions(array $subscriptionsList): self
+    {
         $byProduct = [];
         foreach ($subscriptionsList ?? [] as $record) {
             if ($record[SubscriptionUsed::FIELD_STATUS] != SubscriptionUsed::STATUS_CLOSED) {
@@ -254,7 +284,8 @@ class Account extends PortaObject {
         return $this;
     }
 
-    public function activateSubscriptions(): self {
+    public function activateSubscriptions(): self
+    {
         $result = PortaFactory::$billing->call('/Account/activate_subscriptions', ['i_account' => $this->getIndex()]);
         if (1 != ($result['success'] ?? 0)) {
             throw new PortaObjectsException("Falure to force activate subcriptions for account #" . $this->getIndex());
@@ -262,7 +293,8 @@ class Account extends PortaObject {
         return $this;
     }
 
-    public function chargeSubscriptions(?int $advancePeriods = null): self {
+    public function chargeSubscriptions(?int $advancePeriods = null): self
+    {
         $result = PortaFactory::$billing->call('/Account/charge_subscription_fees',
                 array_merge(
                         ['i_account' => $this->getIndex()],
@@ -275,7 +307,8 @@ class Account extends PortaObject {
         return $this;
     }
 
-    protected function isAddonsChanged(): bool {
+    protected function isAddonsChanged(): bool
+    {
         if (key_exists(Account::FIELD_ASSIGNED_ADDONS, $this->updatedData)) {
             return true;
         }
@@ -287,7 +320,8 @@ class Account extends PortaObject {
         return false;
     }
 
-    protected function getAddonsUpdateData(): array {
+    protected function getAddonsUpdateData(): array
+    {
         if (!$this->isAddonsChanged()) {
             return [];
         }
@@ -297,5 +331,4 @@ class Account extends PortaObject {
         }
         return [self::FIELD_ASSIGNED_ADDONS => $result];
     }
-
 }

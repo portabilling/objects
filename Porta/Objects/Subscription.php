@@ -15,7 +15,8 @@ use Porta\Objects\Defs\DefSubscription;
  * Wrapper for Subscription
  *
  */
-class Subscription extends PortaObject {
+class Subscription extends PortaObject
+{
 
     // Charge periods
     const PERIOD_DAY = 1;
@@ -34,30 +35,37 @@ class Subscription extends PortaObject {
     const LOAD_WITH_DISCOUNTS = 2;
     const LOAD_CHECK_USAGE_BY_RESELLERS = 4;
 
-    public function __construct(array $data) {
+    public function __construct(array $data)
+    {
         parent::__construct($data, new DefSubscription());
     }
 
-    public function getName() {
+    public function getName()
+    {
         return $this->getRequired('name');
     }
 
-    public function getActivationMode() {
+    public function getActivationMode()
+    {
         return $this->getRequired('activation_mode');
     }
 
-    public function getChargeModel() {
+    public function getChargeModel()
+    {
         return $this->getRequired('charge_model');
     }
 
-    public function isDailyCharged() {
+    public function isDailyCharged()
+    {
         return 'Y' == $this->getRequired('generate_daily_charge');
     }
 
-    public function getFee(int $period, int $periods = 0): float {
+    public function getFee(int $period, int $periods = 0): float
+    {
         foreach ($this->getRequired('periodic_fees') as $recordset) {
             foreach ($recordset as $record) {
-                if (($record['i_billing_period'] == $period) && ($record['periods'] == $periods)) {
+                if (($record['i_billing_period'] == $period) && ($record['periods']
+                        == $periods)) {
                     return $record['fee'];
                 }
             }
@@ -65,5 +73,4 @@ class Subscription extends PortaObject {
         throw new PortaObjectsException("Fee not found for period #$period and periods $periods for subscription id "
                         . ($this['i_subscription'] ?? 'unknown'));
     }
-
 }

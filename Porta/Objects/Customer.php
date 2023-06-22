@@ -15,7 +15,8 @@ use Porta\Objects\Exception\PortaObjectsException;
  * Wrapper class for Customer
  *
  */
-class Customer extends PortaObject {
+class Customer extends PortaObject
+{
 
     use \Porta\Objects\Traits\StatusAndBlocked;
 
@@ -57,59 +58,62 @@ class Customer extends PortaObject {
     /** @propery Account[] $accounts */
     protected $accounts = null;
 
-    public function __construct(array $data) {
+    public function __construct(array $data)
+    {
         parent::__construct($data, new Defs\DefCustomer());
     }
 
-    public function getName(): string {
+    public function getName(): string
+    {
         return $this->getRequired('name');
     }
 
-    public function isPrepaid(): bool {
+    public function isPrepaid(): bool
+    {
         return self::PREPAID == $this->getRequired(self::FIELD_BALANCE_CONTROL_TYPE);
     }
 
-    /**
-     * 
-     * @return bool
-     * @deprecated since version 0
-     */
-    public function isPreapaid(): bool {
-        return $this->isPrepaid();
-    }
-
-    public function isCreditLimitSet(): bool {
+    public function isCreditLimitSet(): bool
+    {
         return isset($this['credit_limit']);
     }
 
-    public function isAvailableFundsUnlimited(): bool {
+    public function isAvailableFundsUnlimited(): bool
+    {
         return !$this->isPrepaid() && !$this->isCreditLimitSet();
     }
 
-    public function getAvailableFunds(): ?float {
-        return $this->isCreditLimitSet() ? $this['credit_limit'] - $this['balance'] : null;
+    public function getAvailableFunds(): ?float
+    {
+        return $this->isCreditLimitSet() ? $this['credit_limit'] - $this['balance']
+                    : null;
     }
 
     /** @return Account[] */
-    public function getAccounts(): array {
+    public function getAccounts(): array
+    {
         return $this->accounts ?? $this->doLoadAccounts(Account::LOAD_DETAILED_INFO);
     }
 
-    public function getAccount(int $accountIndex): Account {
+    public function getAccount(int $accountIndex): Account
+    {
         return $this->getAccounts()[$accountIndex] ?? null;
     }
 
-    public function getAccountsIndices(): array {
+    public function getAccountsIndices(): array
+    {
         return array_keys($this->getAccounts());
     }
 
-    public function loadAccounts(int $options = 0, array $params = []): self {
+    public function loadAccounts(int $options = 0, array $params = []): self
+    {
         $this->doLoadAccounts($options, $params);
         return $this;
     }
 
     /** @return Account[] */
-    protected function doLoadAccounts(int $options = 0, array $params = []): array {
+    protected function doLoadAccounts(int $options = 0, array $params = []): array
+    {
         $this->accounts = $this->loadChildren(new Defs\DefAccount(), $options, $params);
         foreach ($this->accounts as $account) {
             $this->attachAccount($account);
@@ -117,7 +121,8 @@ class Customer extends PortaObject {
         return $this->accounts;
     }
 
-    public function attachAccount(Account $account): self {
+    public function attachAccount(Account $account): self
+    {
         if ($account->getRequired('i_customer') == $this->getIndex()) {
             $this->accounts[$account->getIndex()] = $account;
             if ($account->getCustomer() !== $this) {
@@ -129,5 +134,4 @@ class Customer extends PortaObject {
         }
         return $this;
     }
-
 }
